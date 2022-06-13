@@ -19,7 +19,10 @@ class CartWidget extends ConsumerWidget {
           child: Stack(
             clipBehavior: Clip.none,
             children: [
-              const Icon(Icons.add_shopping_cart_rounded),
+              const Icon(
+                Icons.add_shopping_cart_rounded,
+                size: 24,
+              ),
               Positioned(
                 top: -8,
                 right: -8,

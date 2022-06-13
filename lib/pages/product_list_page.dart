@@ -81,11 +81,17 @@ class _ProductListPageState extends ConsumerState<ProductListPage> {
                 itemCount: productList.length,
                 itemBuilder: (context, index) {
                   final product = productList[index];
-                  return ProductWidget(
-                    product: product,
-                    onPressed: () {
-                      _cartView.addProductToCart(product);
-                    },
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8.0,
+                      vertical: 4.0,
+                    ),
+                    child: ProductWidget(
+                      product: product,
+                      onPressed: () {
+                        _cartView.addProductToCart(product);
+                      },
+                    ),
                   );
                 });
           }

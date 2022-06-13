@@ -3,6 +3,8 @@ import 'package:flutter_ecommerce_project/entities/cart.dart';
 import 'package:flutter_ecommerce_project/providers/product_providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+const currencySymbol = '\u20B9';
+
 class AmountWidget extends ConsumerWidget {
   const AmountWidget({Key? key}) : super(key: key);
 
@@ -17,7 +19,10 @@ class AmountWidget extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
-              cartView.calculateCartTotalAmount.toString(),
+              "$currencySymbol${cartView.calculateCartTotalAmount}",
+              style: const TextStyle(
+                fontSize: 20,
+              ),
             ),
           ],
         );

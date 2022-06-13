@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_project/views/cart_view.dart';
 import 'package:flutter_ecommerce_project/widgets/amount_widget.dart';
+import 'package:flutter_ecommerce_project/widgets/app_button.dart';
 import 'package:flutter_ecommerce_project/widgets/cart_item_widget.dart';
 import 'package:flutter_ecommerce_project/widgets/cart_widget.dart';
 import 'package:flutter_ecommerce_project/entities/cart.dart';
@@ -60,11 +61,17 @@ class _CartPageState extends ConsumerState<CartItemsPage> {
             itemCount: cartItems.length,
             itemBuilder: (context, index) {
               final cartItem = cartItems[index];
-              return CartItemWidget(
-                item: cartItem,
-                onAdd: () => _cartView.addProductToCart(cartItem.product),
-                onRemove: () =>
-                    _cartView.removeProductFromCart(cartItem.product),
+              return Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 8.0,
+                  vertical: 4.0,
+                ),
+                child: CartItemWidget(
+                  item: cartItem,
+                  onAdd: () => _cartView.addProductToCart(cartItem.product),
+                  onRemove: () =>
+                      _cartView.removeProductFromCart(cartItem.product),
+                ),
               );
             },
           );
@@ -86,28 +93,23 @@ class _CartPageState extends ConsumerState<CartItemsPage> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const AmountWidget(),
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: AmountWidget(),
+                  ),
                   const SizedBox(
-                    height: 16,
+                    height: 32,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      GestureDetector(
+                      AppButton(
                         onTap: () => _cartView.clearCart(),
-                        child: Container(
-                          color: Colors.blue,
-                          padding: const EdgeInsets.all(8.0),
-                          child: const Text("Clear cart"),
-                        ),
+                        label: "Clear cart",
                       ),
-                      GestureDetector(
+                      AppButton(
                         onTap: onPurchase,
-                        child: Container(
-                          color: Colors.blue,
-                          padding: const EdgeInsets.all(8.0),
-                          child: const Text("Purchase"),
-                        ),
+                        label: "Purchase",
                       ),
                     ],
                   )
