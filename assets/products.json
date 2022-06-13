@@ -1,0 +1,152 @@
+[
+    {
+        "id": "1",
+        "name": "iPhone 13 Pro Max",
+        "category": "electronics",
+        "brand": "apple",
+        "description": "",
+        "price": "159900",
+        "rating": "4.7",
+        "images": [
+            "https://www.saamionline.com/wp-content/uploads/2022/05/iphone_13_pro_max_verde_alpino_03_ad_l.jpg"
+        ],
+        "options": {
+            "colors": [
+                "Sierra Blue",
+                "silver",
+                "gold",
+                "graphite"
+            ],
+            "varients": [
+                "128GB",
+                "256GB",
+                "512GB",
+                "1TB"
+            ]
+        },
+        "optionTypes": [
+            "colors",
+            "varients"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Google Pixel 6 Pro",
+        "category": "electronics",
+        "brand": "google",
+        "description": "",
+        "price": "71500",
+        "rating": "4.7",
+        "images": [
+            "https://m.media-amazon.com/images/I/71ee+5V4ZRL._SL1500_.jpg"
+        ],
+        "options": {
+            "colors": [
+                "Sierra Blue",
+                "silver",
+                "gold",
+                "graphite"
+            ],
+            "varients": [
+                "128GB",
+                "256GB",
+                "512GB",
+                "1TB"
+            ]
+        },
+        "optionTypes": [
+            "colors",
+            "varients"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "SAMSUNG Galaxy S22 ultra 5G",
+        "category": "electronics",
+        "brand": "google",
+        "description": "",
+        "price": "105999",
+        "rating": "4.7",
+        "images": [
+            "https://images.samsung.com/uk/smartphones/galaxy-s22-ultra/buy/02_carousel/04_basic-colors/s22_ultra_productkv_burgundy_mo.jpg"
+        ],
+        "options": {
+            "colors": [
+                "Sierra Blue",
+                "silver",
+                "gold",
+                "graphite"
+            ],
+            "varients": [
+                "128GB",
+                "256GB",
+                "512GB",
+                "1TB"
+            ]
+        },
+        "optionTypes": [
+            "colors",
+            "varients"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "vivo X80 Pro",
+        "category": "electronics",
+        "brand": "google",
+        "description": "",
+        "price": "129000",
+        "rating": "4.7",
+        "images": [
+            "https://images.fonearena.com/blog/wp-content/uploads/2022/04/vivo-X80-Pro.jpg"
+        ],
+        "options": {
+            "colors": [
+                "Sierra Blue",
+                "silver",
+                "gold",
+                "graphite"
+            ],
+            "varients": [
+                "128GB",
+                "256GB",
+                "512GB",
+                "1TB"
+            ]
+        },
+        "optionTypes": [
+            "colors",
+            "varients"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Samsung Galaxy Z Fold3 5G",
+        "category": "electronics",
+        "brand": "google",
+        "description": "",
+        "price": "149999",
+        "rating": "4.7",
+        "images": [
+            "https://m.media-amazon.com/images/I/71MmJNwZcML._SX679_.jpg"
+        ],
+        "options": {
+            "colors": [
+                "Sierra Blue",
+                "silver",
+                "gold",
+                "graphite"
+            ],
+            "varients": [
+                "128GB",
+                "256GB",
+                "512GB",
+                "1TB"
+            ]
+        },
+        "optionTypes": [
+            "colors",
+            "varients"
+        ]
+    }
+]
